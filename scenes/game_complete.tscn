@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dn6oe7hm0nanx"]
+[gd_scene load_steps=4 format=3 uid="uid://dn6oe7hm0nanx"]
 
 [ext_resource type="FontFile" uid="uid://d0gb1phgr8gkj" path="res://fonts/04b_30/04B_30__.TTF" id="1_mts28"]
+[ext_resource type="Script" uid="uid://by733fqp2vpmt" path="res://scripts/game_complete.gd" id="1_ratqx"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mts28"]
 texture_margin_left = 10.0
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ratqx")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -76,3 +78,6 @@ theme_override_font_sizes/font_size = 32
 text = "Score : 0"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/PlayGameBtn" to="." method="_on_play_game_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitBtn" to="." method="_on_exit_btn_pressed"]
