@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://32uuqs3dlv8h"]
+[gd_scene load_steps=13 format=3 uid="uid://32uuqs3dlv8h"]
 
 [ext_resource type="PackedScene" uid="uid://bueps4h567fof" path="res://scenes/player.tscn" id="1_4xfga"]
+[ext_resource type="Script" uid="uid://cqtp8gm64xbkl" path="res://scripts/map.gd" id="1_jh32y"]
 [ext_resource type="PackedScene" uid="uid://16cw3dvfgrhk" path="res://scenes/coin.tscn" id="2_2klcf"]
 [ext_resource type="PackedScene" uid="uid://bqp0tm236hrfl" path="res://scenes/heart.tscn" id="2_nakos"]
 [ext_resource type="PackedScene" uid="uid://cg7j1j84billb" path="res://scenes/tilles.tscn" id="2_paxxb"]
@@ -21,6 +22,7 @@ size = Vector2(64, 648)
 size = Vector2(64, 648)
 
 [node name="map" type="Node2D"]
+script = ExtResource("1_jh32y")
 
 [node name="top" type="StaticBody2D" parent="."]
 unique_name_in_owner = true
@@ -71,7 +73,7 @@ offset_bottom = 648.0
 position = Vector2(-30, 582)
 
 [node name="heart" parent="." instance=ExtResource("2_nakos")]
-position = Vector2(32, 96)
+position = Vector2(80, 112)
 
 [node name="key" parent="." instance=ExtResource("3_jh32y")]
 position = Vector2(320, 272)
