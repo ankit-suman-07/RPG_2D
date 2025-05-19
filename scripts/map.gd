@@ -12,6 +12,9 @@ func toggle_key():
 	key = true
 	print("Key Taken:")
 	
+func get_key():
+	return key
+	
 func update_life():
 	life += 1
 	print("Life Achieved :", life)

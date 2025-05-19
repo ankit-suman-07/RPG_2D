@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cg7j1j84billb" path="res://scenes/tilles.tscn" id="2_paxxb"]
 [ext_resource type="Texture2D" uid="uid://bwnickc4m4iom" path="res://assets/brick_grey.png" id="3_gldc4"]
 [ext_resource type="PackedScene" uid="uid://mb83ypw18e7q" path="res://scenes/key.tscn" id="3_jh32y"]
-[ext_resource type="Texture2D" uid="uid://sm34amntqx6e" path="res://assets/gate.png" id="4_0cso3"]
+[ext_resource type="PackedScene" uid="uid://c80wtt73bero7" path="res://scenes/door.tscn" id="8_jh32y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_paxxb"]
 size = Vector2(1088, 64)
@@ -821,12 +821,6 @@ position = Vector2(64, 0)
 scale = Vector2(0.125, 0.125)
 texture = ExtResource("3_gldc4")
 
-[node name="Gate" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(1105, 572)
-scale = Vector2(0.117187, 0.140625)
-texture = ExtResource("4_0cso3")
-
 [node name="coins" type="Node" parent="."]
 
 [node name="coin" parent="coins" instance=ExtResource("2_2klcf")]
@@ -930,3 +924,7 @@ position = Vector2(688, 176)
 
 [node name="coin34" parent="coins" instance=ExtResource("2_2klcf")]
 position = Vector2(688, 296)
+
+[node name="door" parent="." instance=ExtResource("8_jh32y")]
+z_index = 1
+position = Vector2(1104, 584)
