@@ -1,6 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://32uuqs3dlv8h"]
+[gd_scene load_steps=9 format=3 uid="uid://32uuqs3dlv8h"]
 
 [ext_resource type="PackedScene" uid="uid://bueps4h567fof" path="res://scenes/player.tscn" id="1_4xfga"]
+[ext_resource type="PackedScene" uid="uid://cg7j1j84billb" path="res://scenes/tilles.tscn" id="2_paxxb"]
+[ext_resource type="Texture2D" uid="uid://bwnickc4m4iom" path="res://assets/brick_grey.png" id="3_gldc4"]
+[ext_resource type="Texture2D" uid="uid://sm34amntqx6e" path="res://assets/gate.png" id="4_0cso3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_paxxb"]
 size = Vector2(1088, 64)
@@ -62,4 +65,396 @@ offset_right = 64.0
 offset_bottom = 648.0
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_4xfga")]
-position = Vector2(88, 120)
+position = Vector2(-30, 582)
+
+[node name="tileset" type="Node" parent="."]
+
+[node name="tilles" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(-32, 544)
+
+[node name="tilles2" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(0, 544)
+
+[node name="tilles3" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(32, 544)
+
+[node name="tilles4" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(64, 544)
+
+[node name="tilles5" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(96, 544)
+
+[node name="tilles6" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(128, 544)
+
+[node name="tilles7" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(128, 512)
+
+[node name="tilles8" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(128, 480)
+
+[node name="tilles9" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(128, 448)
+
+[node name="tilles10" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(160, 448)
+
+[node name="tilles11" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(192, 448)
+
+[node name="tilles12" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(192, 416)
+
+[node name="tilles13" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(192, 384)
+
+[node name="tilles14" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(224, 384)
+
+[node name="tilles15" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(256, 384)
+
+[node name="tilles16" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(288, 384)
+
+[node name="tilles17" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(288, 416)
+
+[node name="tilles18" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(288, 448)
+
+[node name="tilles19" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(320, 448)
+
+[node name="tilles20" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(352, 448)
+
+[node name="tilles21" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(352, 480)
+
+[node name="tilles22" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(352, 545)
+
+[node name="tilles23" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(352, 575)
+
+[node name="tilles24" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(384, 480)
+
+[node name="tilles25" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(416, 480)
+
+[node name="tilles26" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(448, 480)
+
+[node name="tilles27" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(480, 480)
+
+[node name="tilles28" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(512, 480)
+
+[node name="tilles29" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(544, 480)
+
+[node name="tilles30" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(544, 416)
+
+[node name="tilles31" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(512, 416)
+
+[node name="tilles32" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(576, 416)
+
+[node name="tilles33" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(608, 416)
+
+[node name="tilles34" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(640, 416)
+
+[node name="wall" type="Node" parent="."]
+
+[node name="BrickGrey" type="Sprite2D" parent="wall"]
+position = Vector2(-1.43051e-06, 32)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey2" type="Sprite2D" parent="wall"]
+position = Vector2(-1.43051e-06, 96)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey3" type="Sprite2D" parent="wall"]
+position = Vector2(-1.43051e-06, 160)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey4" type="Sprite2D" parent="wall"]
+position = Vector2(-1.43051e-06, 224)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey5" type="Sprite2D" parent="wall"]
+position = Vector2(-1.43051e-06, 288)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey6" type="Sprite2D" parent="wall"]
+position = Vector2(-1.43051e-06, 352)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey7" type="Sprite2D" parent="wall"]
+position = Vector2(-1.43051e-06, 416)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey8" type="Sprite2D" parent="wall"]
+position = Vector2(-1.43051e-06, 480)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey9" type="Sprite2D" parent="wall"]
+position = Vector2(-1.43051e-06, 544)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey10" type="Sprite2D" parent="wall"]
+position = Vector2(-1.43051e-06, 608)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey56" type="Sprite2D" parent="wall"]
+position = Vector2(-1.43051e-06, 672)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey11" type="Sprite2D" parent="wall"]
+position = Vector2(64, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey12" type="Sprite2D" parent="wall"]
+position = Vector2(128, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey13" type="Sprite2D" parent="wall"]
+position = Vector2(192, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey14" type="Sprite2D" parent="wall"]
+position = Vector2(256, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey15" type="Sprite2D" parent="wall"]
+position = Vector2(320, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey16" type="Sprite2D" parent="wall"]
+position = Vector2(384, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey17" type="Sprite2D" parent="wall"]
+position = Vector2(448, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey18" type="Sprite2D" parent="wall"]
+position = Vector2(512, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey19" type="Sprite2D" parent="wall"]
+position = Vector2(576, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey20" type="Sprite2D" parent="wall"]
+position = Vector2(640, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey21" type="Sprite2D" parent="wall"]
+position = Vector2(704, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey22" type="Sprite2D" parent="wall"]
+position = Vector2(768, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey23" type="Sprite2D" parent="wall"]
+position = Vector2(832, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey24" type="Sprite2D" parent="wall"]
+position = Vector2(896, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey25" type="Sprite2D" parent="wall"]
+position = Vector2(960, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey26" type="Sprite2D" parent="wall"]
+position = Vector2(1024, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey27" type="Sprite2D" parent="wall"]
+position = Vector2(1088, 640)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey28" type="Sprite2D" parent="wall"]
+position = Vector2(1152, 616)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey29" type="Sprite2D" parent="wall"]
+position = Vector2(1152, 552)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey30" type="Sprite2D" parent="wall"]
+position = Vector2(1152, 488)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey31" type="Sprite2D" parent="wall"]
+position = Vector2(1152, 424)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey32" type="Sprite2D" parent="wall"]
+position = Vector2(1152, 360)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey33" type="Sprite2D" parent="wall"]
+position = Vector2(1152, 296)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey34" type="Sprite2D" parent="wall"]
+position = Vector2(1152, 232)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey35" type="Sprite2D" parent="wall"]
+position = Vector2(1152, 168)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey36" type="Sprite2D" parent="wall"]
+position = Vector2(1152, 104)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey37" type="Sprite2D" parent="wall"]
+position = Vector2(1152, 40)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey38" type="Sprite2D" parent="wall"]
+position = Vector2(1152, -24)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey39" type="Sprite2D" parent="wall"]
+position = Vector2(1088, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey40" type="Sprite2D" parent="wall"]
+position = Vector2(1024, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey41" type="Sprite2D" parent="wall"]
+position = Vector2(960, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey42" type="Sprite2D" parent="wall"]
+position = Vector2(896, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey43" type="Sprite2D" parent="wall"]
+position = Vector2(832, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey44" type="Sprite2D" parent="wall"]
+position = Vector2(768, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey45" type="Sprite2D" parent="wall"]
+position = Vector2(704, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey46" type="Sprite2D" parent="wall"]
+position = Vector2(640, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey47" type="Sprite2D" parent="wall"]
+position = Vector2(576, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey48" type="Sprite2D" parent="wall"]
+position = Vector2(512, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey49" type="Sprite2D" parent="wall"]
+position = Vector2(448, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey50" type="Sprite2D" parent="wall"]
+position = Vector2(384, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey51" type="Sprite2D" parent="wall"]
+position = Vector2(320, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey52" type="Sprite2D" parent="wall"]
+position = Vector2(256, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey53" type="Sprite2D" parent="wall"]
+position = Vector2(192, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey54" type="Sprite2D" parent="wall"]
+position = Vector2(128, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="BrickGrey55" type="Sprite2D" parent="wall"]
+position = Vector2(64, 0)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("3_gldc4")
+
+[node name="Gate" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(1120, 576)
+scale = Vector2(0.117187, 0.140625)
+texture = ExtResource("4_0cso3")

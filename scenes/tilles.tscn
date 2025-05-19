@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg7j1j84billb"]
+
+[ext_resource type="Texture2D" uid="uid://b1jaa640xy0f2" path="res://assets/tiles.png" id="1_fsy0y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vlme7"]
+size = Vector2(32, 32)
+
+[node name="tilles" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(80, 16)
+shape = SubResource("RectangleShape2D_vlme7")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 64.0
+offset_right = 96.0
+offset_bottom = 32.0
+color = Color(0.133333, 0.133333, 0.133333, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 64.0
+offset_right = 96.0
+offset_bottom = 1.0
+color = Color(0.133333, 0.133333, 0.133333, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 64.0
+offset_top = 31.0
+offset_right = 96.0
+offset_bottom = 32.0
+color = Color(0.133333, 0.133333, 0.133333, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = 65.0
+offset_right = 97.0
+offset_bottom = 1.0
+rotation = 1.57252
+color = Color(0.133333, 0.133333, 0.133333, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+offset_left = 96.0
+offset_right = 128.0
+offset_bottom = 1.0
+rotation = 1.57252
+color = Color(0.133333, 0.133333, 0.133333, 1)
+
+[node name="Tiles" type="Sprite2D" parent="."]
+position = Vector2(80.5, 16)
+scale = Vector2(0.0644531, 0.0625)
+texture = ExtResource("1_fsy0y")
