@@ -1,8 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://32uuqs3dlv8h"]
+[gd_scene load_steps=12 format=3 uid="uid://32uuqs3dlv8h"]
 
 [ext_resource type="PackedScene" uid="uid://bueps4h567fof" path="res://scenes/player.tscn" id="1_4xfga"]
+[ext_resource type="PackedScene" uid="uid://16cw3dvfgrhk" path="res://scenes/coin.tscn" id="2_2klcf"]
+[ext_resource type="PackedScene" uid="uid://bqp0tm236hrfl" path="res://scenes/heart.tscn" id="2_nakos"]
 [ext_resource type="PackedScene" uid="uid://cg7j1j84billb" path="res://scenes/tilles.tscn" id="2_paxxb"]
 [ext_resource type="Texture2D" uid="uid://bwnickc4m4iom" path="res://assets/brick_grey.png" id="3_gldc4"]
+[ext_resource type="PackedScene" uid="uid://mb83ypw18e7q" path="res://scenes/key.tscn" id="3_jh32y"]
 [ext_resource type="Texture2D" uid="uid://sm34amntqx6e" path="res://assets/gate.png" id="4_0cso3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_paxxb"]
@@ -66,6 +69,12 @@ offset_bottom = 648.0
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_4xfga")]
 position = Vector2(-30, 582)
+
+[node name="heart" parent="." instance=ExtResource("2_nakos")]
+position = Vector2(32, 96)
+
+[node name="key" parent="." instance=ExtResource("3_jh32y")]
+position = Vector2(320, 272)
 
 [node name="tileset" type="Node" parent="."]
 
@@ -133,10 +142,10 @@ position = Vector2(352, 448)
 position = Vector2(352, 480)
 
 [node name="tilles22" parent="tileset" instance=ExtResource("2_paxxb")]
-position = Vector2(352, 545)
+position = Vector2(384, 544)
 
 [node name="tilles23" parent="tileset" instance=ExtResource("2_paxxb")]
-position = Vector2(352, 575)
+position = Vector2(384, 576)
 
 [node name="tilles24" parent="tileset" instance=ExtResource("2_paxxb")]
 position = Vector2(384, 480)
@@ -162,6 +171,9 @@ position = Vector2(544, 416)
 [node name="tilles31" parent="tileset" instance=ExtResource("2_paxxb")]
 position = Vector2(512, 416)
 
+[node name="tilles35" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(480, 416)
+
 [node name="tilles32" parent="tileset" instance=ExtResource("2_paxxb")]
 position = Vector2(576, 416)
 
@@ -170,6 +182,360 @@ position = Vector2(608, 416)
 
 [node name="tilles34" parent="tileset" instance=ExtResource("2_paxxb")]
 position = Vector2(640, 416)
+
+[node name="tilles36" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(672, 416)
+
+[node name="tilles63" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(704, 312)
+
+[node name="tilles64" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(672, 312)
+
+[node name="tilles65" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(640, 312)
+
+[node name="tilles66" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(736, 312)
+
+[node name="tilles67" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(768, 312)
+
+[node name="tilles68" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(800, 312)
+
+[node name="tilles69" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(832, 312)
+
+[node name="tilles70" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(704, 128)
+
+[node name="tilles71" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(672, 128)
+
+[node name="tilles72" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(640, 128)
+
+[node name="tilles77" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(640, 160)
+
+[node name="tilles81" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(576, 160)
+
+[node name="tilles82" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(576, 192)
+
+[node name="tilles83" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(576, 224)
+
+[node name="tilles84" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(576, 256)
+
+[node name="tilles85" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(576, 288)
+
+[node name="tilles86" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 160)
+
+[node name="tilles87" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 192)
+
+[node name="tilles88" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 224)
+
+[node name="tilles89" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 256)
+
+[node name="tilles90" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 288)
+
+[node name="tilles91" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(160, 224)
+
+[node name="tilles101" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(320, 224)
+
+[node name="tilles102" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(288, 256)
+
+[node name="tilles103" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(192, 256)
+
+[node name="tilles104" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(224, 288)
+
+[node name="tilles105" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(256, 288)
+
+[node name="tilles92" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(128, 192)
+
+[node name="tilles93" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(128, 224)
+
+[node name="tilles94" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(128, 256)
+
+[node name="tilles95" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(128, 288)
+
+[node name="tilles113" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(-32, 288)
+
+[node name="tilles114" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(0, 288)
+
+[node name="tilles115" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(32, 288)
+
+[node name="tilles116" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(32, 128)
+
+[node name="tilles117" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(0, 128)
+
+[node name="tilles118" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(-32, 128)
+
+[node name="tilles119" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(1024, 96)
+
+[node name="tilles120" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(992, 96)
+
+[node name="tilles121" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(448, 64)
+
+[node name="tilles122" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(480, 64)
+
+[node name="tilles123" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(512, 64)
+
+[node name="tilles124" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(416, 64)
+
+[node name="tilles125" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(704, 32)
+
+[node name="tilles126" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(736, 32)
+
+[node name="tilles147" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(736, 64)
+
+[node name="tilles127" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(768, 32)
+
+[node name="tilles128" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(32, 96)
+
+[node name="tilles129" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(32, 64)
+
+[node name="tilles148" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(224, 32)
+
+[node name="tilles149" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(256, 32)
+
+[node name="tilles150" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(256, 64)
+
+[node name="tilles151" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(224, 64)
+
+[node name="tilles130" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(224, 576)
+
+[node name="tilles131" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(256, 576)
+
+[node name="tilles132" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(448, 288)
+
+[node name="tilles152" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(448, 256)
+
+[node name="tilles153" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(480, 256)
+
+[node name="tilles133" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(480, 288)
+
+[node name="tilles134" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(-32, 448)
+
+[node name="tilles135" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(-32, 416)
+
+[node name="tilles136" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(-32, 384)
+
+[node name="tilles137" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(0, 416)
+
+[node name="tilles138" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(1024, 320)
+
+[node name="tilles139" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(1024, 288)
+
+[node name="tilles140" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(1024, 256)
+
+[node name="tilles141" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(992, 288)
+
+[node name="tilles96" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(128, 128)
+
+[node name="tilles106" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(160, 128)
+
+[node name="tilles107" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(192, 128)
+
+[node name="tilles108" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(224, 128)
+
+[node name="tilles109" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(256, 128)
+
+[node name="tilles110" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(288, 128)
+
+[node name="tilles111" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(320, 128)
+
+[node name="tilles112" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(352, 128)
+
+[node name="tilles97" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(352, 192)
+
+[node name="tilles98" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(352, 224)
+
+[node name="tilles99" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(352, 256)
+
+[node name="tilles100" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(352, 288)
+
+[node name="tilles78" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(832, 160)
+
+[node name="tilles79" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(832, 280)
+
+[node name="tilles80" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(640, 280)
+
+[node name="tilles73" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(736, 128)
+
+[node name="tilles74" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(768, 128)
+
+[node name="tilles75" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(800, 128)
+
+[node name="tilles76" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(832, 128)
+
+[node name="tilles37" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(672, 448)
+
+[node name="tilles38" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(672, 480)
+
+[node name="tilles39" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(640, 480)
+
+[node name="tilles40" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(608, 480)
+
+[node name="tilles41" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(608, 512)
+
+[node name="tilles42" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(608, 544)
+
+[node name="tilles43" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(608, 576)
+
+[node name="tilles44" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 576)
+
+[node name="tilles142" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 576)
+
+[node name="tilles45" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 544)
+
+[node name="tilles46" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 512)
+
+[node name="tilles47" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 480)
+
+[node name="tilles48" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 448)
+
+[node name="tilles49" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(896, 416)
+
+[node name="tilles50" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(1024, 416)
+
+[node name="tilles51" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(992, 416)
+
+[node name="tilles52" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(960, 416)
+
+[node name="tilles53" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(1024, 448)
+
+[node name="tilles54" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(1024, 480)
+
+[node name="tilles55" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(1024, 512)
+
+[node name="tilles56" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(1024, 544)
+
+[node name="tilles57" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(1024, 576)
+
+[node name="tilles58" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(864, 416)
+
+[node name="tilles59" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(832, 416)
+
+[node name="tilles60" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(800, 416)
+
+[node name="tilles61" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(800, 448)
+
+[node name="tilles62" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(800, 480)
+
+[node name="tilles143" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(736, 576)
+
+[node name="tilles144" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(736, 544)
+
+[node name="tilles145" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(768, 544)
+
+[node name="tilles146" parent="tileset" instance=ExtResource("2_paxxb")]
+position = Vector2(768, 576)
 
 [node name="wall" type="Node" parent="."]
 
@@ -455,6 +821,110 @@ texture = ExtResource("3_gldc4")
 
 [node name="Gate" type="Sprite2D" parent="."]
 z_index = 1
-position = Vector2(1120, 576)
+position = Vector2(1105, 572)
 scale = Vector2(0.117187, 0.140625)
 texture = ExtResource("4_0cso3")
+
+[node name="coins" type="Node" parent="."]
+
+[node name="coin" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(304, 432)
+
+[node name="coin2" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(336, 432)
+
+[node name="coin3" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(304, 544)
+
+[node name="coin4" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(336, 544)
+
+[node name="coin5" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(528, 560)
+
+[node name="coin6" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(560, 560)
+
+[node name="coin7" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(592, 560)
+
+[node name="coin8" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(176, 528)
+
+[node name="coin9" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(144, 528)
+
+[node name="coin10" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(112, 528)
+
+[node name="coin11" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(80, 176)
+
+[node name="coin12" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(80, 208)
+
+[node name="coin13" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(80, 240)
+
+[node name="coin14" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(112, 176)
+
+[node name="coin15" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(112, 208)
+
+[node name="coin16" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(112, 240)
+
+[node name="coin17" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(240, 208)
+
+[node name="coin18" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(400, 208)
+
+[node name="coin19" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(528, 208)
+
+[node name="coin20" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(560, 208)
+
+[node name="coin21" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(528, 48)
+
+[node name="coin22" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(560, 48)
+
+[node name="coin23" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(304, 112)
+
+[node name="coin24" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(336, 112)
+
+[node name="coin25" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(752, 48)
+
+[node name="coin26" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(880, 48)
+
+[node name="coin27" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(1104, 80)
+
+[node name="coin28" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(1072, 80)
+
+[node name="coin29" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(816, 176)
+
+[node name="coin30" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(816, 296)
+
+[node name="coin31" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(944, 296)
+
+[node name="coin32" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(944, 176)
+
+[node name="coin33" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(688, 176)
+
+[node name="coin34" parent="coins" instance=ExtResource("2_2klcf")]
+position = Vector2(688, 296)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cg7j1j84billb"]
 
-[ext_resource type="Texture2D" uid="uid://b1jaa640xy0f2" path="res://assets/tiles.png" id="1_fsy0y"]
+[ext_resource type="Texture2D" uid="uid://c8ypdrr3rg4pi" path="res://assets/brick-wall.png" id="1_fsy0y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vlme7"]
 size = Vector2(32, 32)
@@ -45,6 +45,6 @@ rotation = 1.57252
 color = Color(0.133333, 0.133333, 0.133333, 1)
 
 [node name="Tiles" type="Sprite2D" parent="."]
-position = Vector2(80.5, 16)
-scale = Vector2(0.0644531, 0.0625)
+position = Vector2(80, 16)
+scale = Vector2(0.0585937, 0.0625)
 texture = ExtResource("1_fsy0y")
