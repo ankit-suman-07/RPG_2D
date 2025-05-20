@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://32uuqs3dlv8h"]
+[gd_scene load_steps=18 format=3 uid="uid://32uuqs3dlv8h"]
 
 [ext_resource type="PackedScene" uid="uid://bueps4h567fof" path="res://scenes/player.tscn" id="1_4xfga"]
 [ext_resource type="Script" uid="uid://cqtp8gm64xbkl" path="res://scripts/map.gd" id="1_jh32y"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bq7x2s0xu36nq" path="res://scenes/enemy_2.tscn" id="10_blm8a"]
 [ext_resource type="PackedScene" uid="uid://b1bsmf1p6pmw8" path="res://scenes/enemy_3.tscn" id="11_mlgqr"]
 [ext_resource type="PackedScene" uid="uid://b5lw8htynb2hw" path="res://scenes/enemy_4.tscn" id="12_wslke"]
+[ext_resource type="FontFile" uid="uid://d0gb1phgr8gkj" path="res://fonts/04b_30/04B_30__.TTF" id="13_gw3fx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_paxxb"]
 size = Vector2(1088, 64)
@@ -964,3 +965,23 @@ position = Vector2(144, 112)
 [node name="enemy_8" parent="." instance=ExtResource("12_wslke")]
 z_index = 1
 position = Vector2(720, 528)
+
+[node name="ScoreLabel" type="Label" parent="."]
+z_index = 1
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 128.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("13_gw3fx")
+theme_override_font_sizes/font_size = 16
+text = "score : 0"
+
+[node name="LifeLabel" type="Label" parent="."]
+z_index = 1
+offset_left = 1024.0
+offset_top = 40.0
+offset_right = 1112.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("13_gw3fx")
+theme_override_font_sizes/font_size = 16
+text = "♥ x 3"
