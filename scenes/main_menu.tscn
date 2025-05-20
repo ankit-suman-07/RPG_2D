@@ -70,4 +70,5 @@ theme_override_font_sizes/font_size = 72
 text = "2D-RPG"
 
 [connection signal="pressed" from="VBoxContainer/PlayGameBtn" to="." method="_on_play_game_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/Controls" to="." method="_on_controls_pressed"]
 [connection signal="pressed" from="VBoxContainer/ExitBtn" to="." method="_on_exit_btn_pressed"]
