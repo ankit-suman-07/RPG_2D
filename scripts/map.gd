@@ -7,7 +7,7 @@ var life := 3
 func increase_score():
 	score += 1
 	Global.score = score
-	$ScoreLabel.text = "Score: ♥" + str(score)
+	$ScoreLabel.text = "Score: " + str(score)
 	print("Score:", score)
 
 func get_score():
