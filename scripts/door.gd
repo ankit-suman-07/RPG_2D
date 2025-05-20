@@ -5,4 +5,4 @@ func _on_body_entered(body: Node2D) -> void:
 		print("collide")
 		var map = get_tree().get_root().get_node("map")
 		if map.get_key() == true:
-			print("Winner")
+			get_tree().change_scene_to_file("res://scenes/game_complete.tscn")

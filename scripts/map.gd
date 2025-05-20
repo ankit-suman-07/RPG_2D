@@ -8,6 +8,9 @@ func increase_score():
 	score += 1
 	print("Score:", score)
 
+func get_score():
+	return score
+
 func toggle_key():
 	key = true
 	print("Key Taken:")
@@ -22,3 +25,6 @@ func update_life():
 func decrement_life():
 	life -= 1
 	print("Life Taken :", life)
+
+func get_life():
+	return life
